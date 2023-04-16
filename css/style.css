@@ -49,7 +49,8 @@ main {
 }
 
 main .parte-escrita {
-    margin-right: 140px;
+    margin: auto;
+    padding: 0 50px 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,6 +65,7 @@ main .titulo {
 
 main .subtitulo {
     font-family: 'Roboto', cursive;
+    text-align: center;
     font-size: 24px;
     color: #FA240F;
 }
@@ -128,10 +130,13 @@ main .sobre {
 }
 
 aside {
+    margin: auto;
+    padding: 0 50px 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 50%;
 }
 
 aside .desktop {
@@ -139,7 +144,7 @@ aside .desktop {
     height: fit-content;
     max-height: 400px;
     width: fit-content;
-    max-width: 600px;
+    max-width: 100%;
     border-radius: 10px;
     border: #FA240F 1px solid;
 }
@@ -147,16 +152,38 @@ aside .desktop {
 aside .telas-mobile {
     display: flex;
     flex-direction: row;
-    gap: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 20px;
+    max-width: 90%;
 }
 
 aside .telas-mobile img {
     height: fit-content;
     max-height: 400px;
     width: fit-content;
-    max-width: 300px;
+    max-width: 50%;
     border-radius: 25px;
+    margin: 0 5px 0 5px;
+}
+
+@media (max-width: 1050px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        max-width: 100%;
+    }
+    aside .desktop {
+        max-width: 80%;
+    }
+}
+@media (max-width: 650px) {
+    main .botoes{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo-vantagens, .vantagens {
+        display: none;
+    }
 }

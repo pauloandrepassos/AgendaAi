@@ -42,10 +42,8 @@ body {
 }
 
 main {
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
 main .parte-escrita {
@@ -68,6 +66,7 @@ main .subtitulo {
     text-align: center;
     font-size: 24px;
     color: #FA240F;
+    padding: 0 50px 0 50px;
 }
 
 main .botoes {
@@ -164,6 +163,65 @@ aside .telas-mobile img {
     max-width: 50%;
     border-radius: 25px;
     margin: 0 5px 0 5px;
+}
+
+main .titulo-lanchonetes {
+    margin-top: 25px;
+    color: #FA240F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+.lanchonetes-cadastradas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 50px;
+    margin: auto;
+}
+
+.card-lanchonete {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #FA240F;
+    border-radius: 1rem;
+    margin: 5px 5px;
+    display: flex;
+    text-align: center;
+    color: #FA240F;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.logo-lanchonete {
+    background: #FA240F;
+    height: 100%;
+    width: 40%;
+    border-radius: 1rem;
+}
+
+.info-lanchonete {
+    height: 100%;
+    width: 60%;
+    padding: 5px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nome-lanchonete {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+  }
+  
+.localizacao-lanchonete,
+.horario-lanchonete {
+    margin: 0;
+    font-size: 16px;
 }
 
 @media (max-width: 1050px) {

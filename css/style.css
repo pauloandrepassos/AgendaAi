@@ -84,6 +84,9 @@ main .subtitulo {
     color: #FA240F;
     padding: 0 50px 0 50px;
 }
+.subtitulo_tela_lanchonetes {
+    margin-top: 30px;
+}
 
 main .botoes {
     display: flex;
@@ -203,12 +206,14 @@ main .titulo-lanchonetes {
     height: 200px;
     border: 1px solid #FA240F;
     border-radius: 1rem;
-    margin: 5px 5px;
+    margin: 10px 5px;
     display: flex;
     text-align: center;
     color: #FA240F;
     font-family: 'Roboto', sans-serif;
     transition: 0.2s;
+    box-shadow: 7px 5px 5px #0000004f;
+
 }
 
 @media (max-width: 900px) {
@@ -226,6 +231,14 @@ main .titulo-lanchonetes {
     height: 100%;
     width: 40%;
     border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  /*esconde o conteúdo que ultrapassar a div*/
+}
+
+.logo-lanchonete img {
+    max-height: 100%;
 }
 
 .info-lanchonete {
@@ -247,6 +260,90 @@ main .titulo-lanchonetes {
 .horario-lanchonete {
     margin: 0;
     font-size: 16px;
+}
+
+.main-lanchonete {
+    padding: 20px;
+    color: #FA240F;
+}
+
+@media (min-width: 1200px) {
+    .main-lanchonete {
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+.info-lanchonete-selecionada {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+@media (max-width: 900px) {
+    .info-lanchonete-selecionada {
+        flex-direction: column;
+    }
+    .img-lanchonete {
+        margin: auto;
+    }
+    .txt-lanchonete {
+        margin: auto;
+    }
+}
+
+.img-lanchonete {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.img-lanchonete img{
+    max-height: 300px;
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 7px 5px 5px #0000004f;
+}
+
+.txt-lanchonete {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    color: #FA240F;
+    padding-left: 5px;
+}
+
+.lanches {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-lanche {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 5px 10px 5px;
+    color: #FA680F;
+    transition: 0.2s;
+}
+
+.card-lanche:hover {
+    transform: scale(1.08);
+}
+
+.card-lanche img {
+    max-width: 70%;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 7px 5px 5px #0000004f;
 }
 
 @media (max-width: 1050px) {

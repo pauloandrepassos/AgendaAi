@@ -25,14 +25,30 @@ header {
 }
 
 header .logo {
-    margin-left: 35px;
+    margin-left: 5%;
     font-family: 'Pacifico', cursive;
     font-size: 18px;
     color: #FAF0EC;
+    display: flex;
+}
+
+.logo-img {
+    height: 70px;
+}
+
+@media (max-width: 500px) {
+    .logo-nome {
+        display: none;
+    }
+}
+@media (min-width: 500px) {
+    .logo-img {
+        display: none;
+    }
 }
 
 header .sandwich {
-    margin-right: 35px;
+    margin-right: 5%;
     color: #FFF7E1;
     border-radius: 3rem;
     padding: 10px;
@@ -280,24 +296,25 @@ main .titulo-lanchonetes {
     margin: 20px 0;
 }
 
+.img-lanchonete {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
 @media (max-width: 900px) {
     .info-lanchonete-selecionada {
         flex-direction: column;
     }
     .img-lanchonete {
         margin: auto;
+
     }
     .txt-lanchonete {
         margin: auto;
     }
-}
-
-.img-lanchonete {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 5px;
 }
 
 .img-lanchonete img{
@@ -308,7 +325,7 @@ main .titulo-lanchonetes {
 }
 
 .txt-lanchonete {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,6 +338,10 @@ main .titulo-lanchonetes {
 .lanches {
     display: flex;
     flex-wrap: wrap;
+}
+.tipo-salgado {
+    border-top: 1px solid #FA240F;
+    margin-top: 20px;
 }
 
 .card-lanche {

@@ -28,13 +28,14 @@ main .titulo-lanchonetes {
     height: 200px;
     border: 1px solid #FA240F;
     border-radius: 1rem;
-    margin: 10px 5px;
+    margin: 20px 5px;
     display: flex;
     text-align: center;
     color: #FA240F;
     font-family: 'Roboto', sans-serif;
     transition: 0.2s;
-    box-shadow: 7px 5px 5px #0000004f;
+    box-shadow:  20px 20px 40px #afa8a5,
+                 -20px -20px 40px #ffffff;
 
 }
 

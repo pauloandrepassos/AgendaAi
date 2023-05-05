@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.main-login-cadastro {
+    width: 100ww;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login {
+    padding: 6px;
+    width: 360px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #FA240F;
+    box-shadow: 0 0 20px 0 darkgrey;
+}
+
+.container-cadastro {
+    padding: 6px;
+    width: 360px;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #FA240F;
+    box-shadow: 0 0 20px 0 darkgrey;
+}
+
+.login-cadastro-titulo {
+    font-family: 'Lobster', cursive;
+    color: #FA240F;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.form-login {
+    position: relative;
+    margin-top: 30px;
+    transition: 0.5s;
+    width: 300px;
+    height: 400px;
+}
+
+.form-cadastro {
+    position: relative;
+    transition: 0.5s;
+    width: 300px;
+    height: 400px;
+}
+
+::placeholder {
+    color: #FA680F;
+}
+
+input[type="text"], input[type="number"], input[type="password"], input[type="email"] {
+    border: none;
+    border-bottom: 2px solid #FA680F;
+    background: transparent;
+    margin-top: 40px;
+    padding: 8px 0px 8px 10px;
+    outline: none;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background: #FA240F;
+    color: #FFF7E1;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 10px 10px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #FFF7E1;
+}
+
+.div-check {
+    margin: 10px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+}
+
+input[type="checkbox"]:checked {
+    cursor: pointer;
+    background-color: #FA680F;
+}
+
+.login-cadastro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-cadastro a {
+    color: #FA240F;
+    text-decoration: none;
+}
+
+.fa-eye, .fa-eye-slash {
+    color: #FA680F;
+    position: relative;
+    top: -25px;
+    right: -270px;
+    cursor: pointer;
+}

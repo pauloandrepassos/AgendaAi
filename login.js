@@ -11,3 +11,12 @@ const togglePassword = document.querySelector('#togglePassword');
 
                 // toggle the eye slash icon
             });
+document.getElementById("buttonLogin").addEventListener("click", function() {
+    var emailLogin = document.getElementById("emailLogin").value;
+    if (emailLogin == "admin") {
+        window.location.href = 'admin.html';
+    }
+    else {
+        window.location.href = 'telaLanchonetes.html';
+    }
+});

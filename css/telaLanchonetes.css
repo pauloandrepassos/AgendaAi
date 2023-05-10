@@ -7,7 +7,7 @@
     margin-top: 30px;
 }
 
-main .titulo-lanchonetes {
+.titulo-lanchonetes {
     margin-top: 25px;
     color: #FA240F;
     font-family: 'Roboto', sans-serif;
@@ -34,15 +34,8 @@ main .titulo-lanchonetes {
     color: #FA240F;
     font-family: 'Roboto', sans-serif;
     transition: 0.2s;
-    box-shadow:  20px 20px 40px #afa8a5,
-                 -20px -20px 40px #ffffff;
+    box-shadow:  20px 20px 40px #afa8a5;
 
-}
-
-@media (max-width: 900px) {
-    .card-lanchonete {
-        margin: 5px auto;
-    }
 }
 
 .card-lanchonete:hover {
@@ -83,4 +76,31 @@ main .titulo-lanchonetes {
 .horario-lanchonete {
     margin: 0;
     font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .card-lanchonete {
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-lanchonete {
+        width: 100%;
+    }
+    .lanchonetes-cadastradas {
+        padding: 30px 5px;
+    }
+    .subtitulo {
+        font-size: 18px;
+    }
+    .titulo-lanchonetes {
+        font-size: 18px;
+    }
+    .nome-lanchonete {
+        font-size: 18px;
+    }
+    .localizacao-lanchonete, .horario-lanchonete {
+        font-size: 14px;
+    }
 }

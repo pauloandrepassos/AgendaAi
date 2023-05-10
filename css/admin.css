@@ -15,6 +15,7 @@
     color: #FA680F;
     font-family: 'Roboto', sans-serif;
     transition: 0.3s;
+    box-shadow:  20px 20px 40px #afa8a5;
 }
 
 .card-admin h3 {

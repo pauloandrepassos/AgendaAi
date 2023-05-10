@@ -1,0 +1,54 @@
+.main-gerenciarCantinas {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+.cantinas-cadastradas {
+    border: 1px solid black;
+    width: 20%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1000px) {
+    .cantinas-cadastradas {
+        display: none;
+    }
+    .cantina-selecionada {
+        width: 100%;
+    }
+}
+.logo-lanchonete {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 20px;
+    background-color: #FA680F;
+    transition: 0.3s;
+}
+.logo-lanchonete:hover {
+    transform: scale(1.1);
+}
+.logo-lanchonete img {
+    max-height: 100%;
+}
+.cantina-selecionada {
+    text-align: center;
+    width: 80%;
+    border: 1px solid black;
+}
+.info {
+    display: flex;
+}
+.info-title {
+    width: 40%;
+    border: 1px solid black;
+}
+.info-txt {
+    width: 60%;
+    border: 1px solid black;
+}

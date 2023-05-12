@@ -3,7 +3,6 @@
     font-family: 'Roboto', sans-serif;
 }
 .cantinas-cadastradas {
-    border: 1px solid black;
     width: 20%;
     min-width: 250px;
     display: flex;
@@ -30,25 +29,52 @@
     background-color: #FA680F;
     transition: 0.3s;
 }
-.logo-lanchonete:hover {
+.cantinas-cadastradas .logo-lanchonete:hover {
     transform: scale(1.1);
 }
 .logo-lanchonete img {
     max-height: 100%;
 }
 .cantina-selecionada {
+    padding-top: 50px;
     text-align: center;
-    width: 80%;
-    border: 1px solid black;
+    width: 100%;
+    height: 90vh;
 }
 .info {
     display: flex;
+    height: 50%;
 }
 .info-title {
     width: 40%;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .info-txt {
     width: 60%;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info-txt div {
+    border: 1px solid #FA680F;
+    background-color: #FFFFFF;
+    margin: 0 5%;
+    padding: 15px;
+    border-radius: 3rem;
+}
+.info-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-logo button {
+    padding: 5px;
+    background-color: #FFFFFF;
+    color: #FA240F;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #FA240F;
+    border-radius: 1rem;
 }

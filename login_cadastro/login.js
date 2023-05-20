@@ -14,9 +14,9 @@ const togglePassword = document.querySelector('#togglePassword');
 document.getElementById("buttonLogin").addEventListener("click", function() {
     var emailLogin = document.getElementById("emailLogin").value;
     if (emailLogin == "admin") {
-        window.location.href = 'admin.html';
+        window.location.href = '/admin/admin.html';
     }
     else {
-        window.location.href = 'telaLanchonetes.html';
+        window.location.href = '/user/telaLanchonetes.html';
     }
 });

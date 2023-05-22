@@ -4,7 +4,6 @@
 
 main {
     display: flex;
-    width: 100vw;
     color: var(--header-color-two);
 }
 
@@ -29,9 +28,84 @@ main {
 }
 
 .opcoes-menu div {
-    width: 100%;
+    max-width: 100%;
     margin-top: -1px;
     padding: 5px;
     border-bottom: 1px solid var(--header-color-one);
     border-top: 1px solid var(--header-color-one);
+}
+
+.configurar-cantina {
+    width: 100%;
+    padding: 50px;
+}
+.info {
+    display: flex;
+    height: 50%;
+}
+.info-title {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info-txt {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info-txt div {
+    border: 1px solid #FA680F;
+    background-color: #FFFFFF;
+    margin: 0 5%;
+    padding: 15px;
+    border-radius: 3rem;
+}
+.info-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 5px 20px;
+    background-color: #FFFFFF;
+    color: #FA240F;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #FA240F;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #FA240F;
+    color: #FFFFFF;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+.logo-lanchonete {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 20px;
+    background-color: #FA680F;
+    transition: 0.3s;
+    box-shadow:  15px 15px 30px #afa8a5;
+}
+.cantinas-cadastradas .logo-lanchonete:hover {
+    transform: scale(1.1);
+}
+.logo-lanchonete img {
+    max-height: 100%;
 }

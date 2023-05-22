@@ -1,3 +1,5 @@
+@import '/css/cores.css';
+
 main {
     flex-direction: row;
     justify-content: center;
@@ -64,6 +66,21 @@ main .botoes a:hover {
 main .botoes h3 {
     margin-top: 8px;
 }
+
+.botao-cadastrar-cantina {
+    margin-top: 20px;
+    background-color: var(--header-color-two);
+    border-radius: 3rem;
+    padding: 10px 20px;
+    color: var(--background-color-one);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.botao-cadastrar-cantina:hover {
+    transform: scale(1.1);
+    
+}
+
 
 main .titulo-vantagens {
     margin-top: 25px;

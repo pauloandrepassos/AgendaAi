@@ -1,8 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import '/css/header.css';
 @import '/css/cores.css';
 
+main {
+    padding: 30px;
+}
+
 .formulario-cadastro {
     border: 2px solid var(--header-color-two);
+    border-radius: 3rem;
     max-width: 900px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow:  10px 10px 30px #afa8a5;
+}
+
+.formulario-cadastro h1, h3 {
+    font-family: 'Lobster', cursive;
+    margin-bottom: 20px;
+    color: var(--header-color-two);
+}
+
+.formulario-cadastro h1{
+    font-size: 40px;
+    margin: auto;
+}
+.formulario-cadastro h3 {
+    font-size: 20px;
+}
+
+.formulario-cadastro label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--header-color-one);
+}
+
+.formulario-cadastro input {
+    border: none;
+    border-bottom: 2px solid #FA680F;
+    background: transparent;
+    margin: 10px 0 20px 0;
+    padding: 8px 0px 8px 10px;
+    outline: none;
+    width: 100%;
+}
+
+.botao-formulario {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 3rem;
+    border: 2px solid var(--header-color-one);
+    background-color: var(--background-color-two);
+    color: var(--header-color-one);
+    transition: 0.3s;
+}
+
+.botao-formulario:hover {
+    background-color: var(--header-color-one);
+    color: var(--background-color-two);
 }

@@ -17,9 +17,39 @@
         </div>
     </header>
     <main>
-        <section class="formulario-cadastro">
+        <form class="formulario-cadastro" action="">
+            <h1>Formulario para cadastro da Cantina</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome da cantina">
 
-        </section>
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ">
+
+            <label for="imagem">Anexe uma imagem da cantina</label>
+            <input type="file" id="imagem" name="imagem">
+            
+            <h3>Endereço</h3>
+            <label for="cep">Informe seu CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite o CEP" pattern="[0-9]{5}-[0-9]{3}" required>
+
+            <label for="rua">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Digite o logradouro">
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" placeholder="Digite o numero">
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Digite o nome do bairro">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite o nome da cidade">
+
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado" placeholder="Digite o nome do estado">
+
+            <button class="botao-formulario" type="submit">Enviar</button>
+
+        </form>
     </main>
 
 

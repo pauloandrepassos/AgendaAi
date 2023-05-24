@@ -16,6 +16,9 @@ document.getElementById("buttonLogin").addEventListener("click", function() {
     if (emailLogin == "admin") {
         window.location.href = '/admin/admin.html';
     }
+    else if (emailLogin == 'gerente') {
+        window.location.href = '/gerente/gerente.html'
+    }
     else {
         window.location.href = '/user/telaLanchonetes.html';
     }

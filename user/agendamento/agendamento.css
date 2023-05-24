@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: default;
+}
+
+main h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: #FA240F;
+}
+
+.lanchonete-ilustrativa {
+    padding: 30px;
+    width: 100%;
+}
+
+.pedido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border: #FA240F 1px solid;
+    border-radius: 15px;
+    color: #FA680F;
+    margin-bottom: 10px;
+}
+
+.pedido img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.x {
+    color: #FA240F;
+    cursor: pointer;
+}
+
+.pedido a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 8%;
+    height: 40px;
+    background: #FA240F;
+    color:#FFF7E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#foto-coxinha {
+    z-index: 3;
+    position: relative;
+}
+
+#foto-cafe {
+    z-index: 2;
+    position: relative;
+    right: 55px;
+}
+
+#foto-bolo {
+    position: relative;
+    right: 110px;
+}
+
+#foto-cachorro {
+    position: relative;
+    z-index: 2;
+}
+
+#foto-cafe2 {
+    position: relative;
+    z-index: 1;
+    right: 55px;
+}
+
+#foto-bolo2 {
+    position: relative;
+    z-index: 2;
+}
+
+#foto-cafe3 {
+    position: relative;
+    z-index: 1;
+    right: 55px;
+}

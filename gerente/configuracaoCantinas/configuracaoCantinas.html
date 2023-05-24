@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tela dedicada para a configuração da cantina pelo gerente">
-    <link rel="stylesheet" href="configuracaoCantinas.css">
+    <link rel="stylesheet" href="/gerente/gerente.css">
     <link rel="shortcut icon" href="/images/logo-agendaai-icon.ico" type="image/x-icon">
     <title>Configuração</title>
 </head>
@@ -18,13 +18,21 @@
     </header>
     <main>
         <section class="menu">
-            <img src="/images/logo1.png" alt="">
+            <img onclick="window.location.href='/gerente/gerente.html'" src="/images/logo1.png" alt="">
             <h2>NOME DA LANCHONETE</h2>
             <div class="opcoes-menu">
-                <div><h3>Cardapio</h3></div>
-                <div><h3>Configurar Cantina</h3></div>
-                <div><h3>Agendamentos</h3></div>
-                <div><h3>Histórico de Vendas</h3></div>
+                <div>
+                    <h3>Cardapio</h3>
+                </div>
+                <div onclick="window.location.href='/gerente/configuracaoCantinas/configuracaoCantinas.html'">
+                    <h3>Configurar Cantina</h3>
+                </div>
+                <div onclick="window.location.href='/gerente/agendamentos/agendamentos.html'">
+                    <h3>Agendamentos</h3>
+                </div>
+                <div onclick="window.location.href='/gerente/historicoVendas/historicoVendas.html'">
+                    <h3>Histórico de Vendas</h3>
+                </div>
             </div>
         </section>
         <section class="configurar-cantina">

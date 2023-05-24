@@ -1,5 +1,6 @@
 @import '/css/cores.css';
 @import'/css/header.css';
+@import '/user/lanchonete1/lanchonete1.css';
 
 
 main {
@@ -33,9 +34,10 @@ main {
     padding: 5px;
     border-bottom: 1px solid var(--header-color-one);
     border-top: 1px solid var(--header-color-one);
+    cursor: pointer;
 }
 
-.configurar-cantina {
+.configurar-cantina, .agendamentos-realizados {
     width: 100%;
     padding: 50px;
 }
@@ -108,4 +110,10 @@ button:hover {
 }
 .logo-lanchonete img {
     max-height: 100%;
+}
+
+.card-agendamento {
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--header-color-one);
 }

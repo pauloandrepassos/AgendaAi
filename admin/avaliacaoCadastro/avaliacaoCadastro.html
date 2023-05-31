@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tela dedicada para a avaliação de formulários de registro de cantinas.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="avaliacaoCadastro.css">
     <link rel="shortcut icon" href="/images/logo-agendaai-icon.ico" type="image/x-icon">
@@ -17,7 +18,64 @@
             <h1 class="logo-nome">Agenda aí</h1>
         </div>
     </header>
+    <main>
+        <section class="formularios">
+            <h1>Solicitações de cadastro:</h1>
+            <div class="card-formulario">
+                <div class="card-minimizado">
+                    <h3 class="num">2023/05/28</h3>
+                    <h3 class="nome">Cantina - IFPI Campus Picos</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="card-formulario">
+                <div class="card-minimizado" id="cardMinimizado">
+                    <h3 class="num">2023/05/15</h3>
+                    <h3 class="nome">Cantina - IFPI Campus Picos</h3>
+                    <i id="icone" class="fas fa-chevron-down"></i>
+                </div>
+                <div class="card_max" id="cardMax" style="display: nonee;">
+                    <section class="formulario-enviado">
+                        
+                    </section>
+                    <form class="formulario-cadastro" action="">
+                        <h1>Formulario para cadastro da Cantina</h1>
+                        <label for="nome">Nome:</label>
+                        <div><p>Cantina - IFPI Campus Picos</p></div>
+            
+                        <label for="cnpj">CNPJ:</label>
+                        <div><p>XXX. XXX/0001-XX</p></div>
+            
+                        <label for="imagem">Imagem da cantina</label>
+                        <img src="/images/imagem-lanchonete1.jpg" alt="">
+                        
+                        <h3>Endereço</h3>
+                        <label for="cep">Informe seu CEP:</label>
+                        <div>XXXXX-XXX</div>
+            
+                        <label for="rua">Logradouro:</label>
+                        <input type="text" id="logradouro" name="logradouro" placeholder="Digite o logradouro">
+            
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" name="numero" placeholder="Digite o numero">
+            
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" placeholder="Digite o nome do bairro">
+            
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Digite o nome da cidade">
+            
+                        <label for="estado">Estado:</label>
+                        <input type="text" name="estado" id="estado" placeholder="Digite o nome do estado">
+            
+                        <button class="botao-formulario" type="submit">Enviar</button>
+            
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
+    <script src="/script.js"></script>
 </body>
 </html>

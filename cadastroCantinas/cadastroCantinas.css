@@ -64,3 +64,9 @@ main {
     background-color: var(--header-color-one);
     color: var(--background-color-two);
 }
+
+@media (max-width: 650px) {
+    .formulario-cadastro h1 {
+        font-size: 25px;
+    }
+}

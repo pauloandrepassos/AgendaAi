@@ -1,0 +1,50 @@
+@import "/css/cores.css";
+@import "/cadastroCantinas/cadastroCantinas.css";
+
+.formularios {
+    max-width: 900px;
+    margin: 30px auto;
+    font-family: 'Roboto', sans-serif;
+    color: var(--header-color-two);
+    text-align: center;
+}
+
+.card-formulario {
+    border: 1px solid var(--header-color-two);
+    border-radius: 1rem;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card-formulario .card-minimizado {
+    display: flex;
+}
+
+.card-formulario .num {
+    width: 5%;
+}
+
+.card-formulario .nome {
+    width: 90%;
+}
+
+.card-formulario i {
+    width: 5%;
+}
+
+.card-formulario i:hover {
+    transform: scale(1.3);
+}
+
+.formulario-cadastro div {
+    border: 1px solid var(--header-color-two);
+    background-color: var(--background-color-two);
+    border-radius: 3rem;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+}
+
+.formulario-cadastro img{
+    max-width: 500px;
+    margin: 10px auto 20px auto;
+}

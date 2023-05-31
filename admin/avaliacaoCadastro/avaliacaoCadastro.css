@@ -1,5 +1,4 @@
 @import "/css/cores.css";
-@import "/cadastroCantinas/cadastroCantinas.css";
 
 .formularios {
     max-width: 900px;
@@ -36,7 +35,7 @@
     transform: scale(1.3);
 }
 
-.formulario-cadastro div {
+.formulario-enviado div {
     border: 1px solid var(--header-color-two);
     background-color: var(--background-color-two);
     border-radius: 3rem;
@@ -44,7 +43,26 @@
     margin: 10px 0 20px 0;
 }
 
-.formulario-cadastro img{
-    max-width: 500px;
+.formulario-enviado img{
+    max-width: 100%;
+    max-height: 300px;
     margin: 10px auto 20px auto;
+}
+
+.formulario-enviado button {
+    padding: 10px;
+    width: 150px;
+    background-color: #FFFFFF;
+    margin: 0 20px;
+    color: #FA240F;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #FA240F;
+    border-radius: 3rem;
+    transition: 0.3s;
+}
+.formulario-enviado button:hover {
+    transform: scale(1.1);
+    background-color: #FA240F;
+    color: #FFFFFF;
 }

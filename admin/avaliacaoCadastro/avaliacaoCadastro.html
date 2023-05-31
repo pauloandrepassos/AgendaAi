@@ -21,32 +21,24 @@
     <main>
         <section class="formularios">
             <h1>Solicitações de cadastro:</h1>
-            <div class="card-formulario">
-                <div class="card-minimizado">
-                    <h3 class="num">2023/05/28</h3>
-                    <h3 class="nome">Cantina - IFPI Campus Picos</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
+            
             <div class="card-formulario">
                 <div class="card-minimizado" id="cardMinimizado">
                     <h3 class="num">2023/05/15</h3>
                     <h3 class="nome">Cantina - IFPI Campus Picos</h3>
                     <i id="icone" class="fas fa-chevron-down"></i>
                 </div>
-                <div class="card_max" id="cardMax" style="display: nonee;">
+                <div class="card_max" id="cardMax" style="display: none;">
                     <section class="formulario-enviado">
                         
                     </section>
-                    <form class="formulario-cadastro" action="">
-                        <h1>Formulario para cadastro da Cantina</h1>
+                    <form class="formulario-enviado" action="">
                         <label for="nome">Nome:</label>
                         <div><p>Cantina - IFPI Campus Picos</p></div>
             
                         <label for="cnpj">CNPJ:</label>
                         <div><p>XXX. XXX/0001-XX</p></div>
-            
-                        <label for="imagem">Imagem da cantina</label>
+
                         <img src="/images/imagem-lanchonete1.jpg" alt="">
                         
                         <h3>Endereço</h3>
@@ -54,21 +46,22 @@
                         <div>XXXXX-XXX</div>
             
                         <label for="rua">Logradouro:</label>
-                        <input type="text" id="logradouro" name="logradouro" placeholder="Digite o logradouro">
+                        <div><p>Avenida Pedro Marques de Medeiros</p></div>
             
                         <label for="numero">Número:</label>
-                        <input type="text" id="numero" name="numero" placeholder="Digite o numero">
+                        <div><p>s/n</p></div>
             
                         <label for="bairro">Bairro:</label>
-                        <input type="text" id="bairro" name="bairro" placeholder="Digite o nome do bairro">
+                        <div><p>Parque Industrial</p></div>
             
                         <label for="cidade">Cidade:</label>
-                        <input type="text" id="cidade" name="cidade" placeholder="Digite o nome da cidade">
+                        <div><p>Picos</p></div>
             
                         <label for="estado">Estado:</label>
-                        <input type="text" name="estado" id="estado" placeholder="Digite o nome do estado">
-            
-                        <button class="botao-formulario" type="submit">Enviar</button>
+                        <div><p>PI</p></div>
+
+                        <button>Aceitar</button>
+                        <button>Recusar</button>
             
                     </form>
                 </div>

@@ -1,0 +1,53 @@
+@import'/css/cores.css';
+
+main {
+    font-family: 'Roboto', cursive;}
+
+main h1 {
+    color: var(--header-color-two);
+    text-align: center;
+    margin: 20px 0;
+}
+
+table {
+    max-width: 900px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+ }
+
+.id-usuario {
+    width: 10%;
+}
+.nome-usuario {
+    width: 30%;
+}
+.email-usuario {
+    width: 30%;
+}
+
+
+th {
+    background-color: #f5f5f5;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.acao {
+    border: 1px solid var(--header-color-two);
+    border-radius: 3rem;
+    color: var(--header-color-two);
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+.acao:hover {
+    color: var(--background-color-two);
+    background-color: var(--header-color-two);
+}

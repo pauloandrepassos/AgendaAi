@@ -3,13 +3,6 @@
     color: #FA240F;
 }
 
-@media (min-width: 1200px) {
-    .main-lanchonete {
-        width: 1200px;
-        margin: auto;
-    }
-}
-
 .info-lanchonete-selecionada {
     display: flex;
     justify-content: space-between;
@@ -92,5 +85,11 @@
 @media (max-width: 600px) {
     .card-lanche {
         width: 100px;
+    }
+}
+@media (min-width: 1200px) {
+    .main-lanchonete {
+        width: 1200px;
+        margin: auto;
     }
 }

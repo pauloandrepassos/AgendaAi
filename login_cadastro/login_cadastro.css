@@ -97,6 +97,10 @@ button a {
     font-size: 13px;
 }
 
+input[type="checkbox"] {
+    border-radius: 50px;
+}
+
 input[type="checkbox"]:checked {
     cursor: pointer;
     background-color: #FA680F;
@@ -123,3 +127,4 @@ input[type="checkbox"]:checked {
     right: -270px;
     cursor: pointer;
 }
+

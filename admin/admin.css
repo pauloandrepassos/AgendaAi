@@ -7,7 +7,8 @@
 }
 
 .card-admin {
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     border: 1px solid #FA680F;
     border-radius: 1rem;
     text-align: center;
@@ -35,4 +36,10 @@
 
 .card-admin:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .gerenciar-cantinas img {
+        display: none;
+    }
 }

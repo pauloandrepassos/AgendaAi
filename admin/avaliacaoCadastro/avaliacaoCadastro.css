@@ -1,5 +1,9 @@
 @import "/css/cores.css";
 
+main {
+    padding: 20px;
+}
+
 .formularios {
     max-width: 900px;
     margin: 30px auto;
@@ -53,7 +57,7 @@
     padding: 10px;
     width: 150px;
     background-color: #FFFFFF;
-    margin: 0 20px;
+    margin: 20px;
     color: #FA240F;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -65,4 +69,15 @@
     transform: scale(1.1);
     background-color: #FA240F;
     color: #FFFFFF;
+}
+
+@media (max-width: 625px) {
+    .card-formulario .card-minimizado {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .card-formulario .card-minimizado * {
+        width: 100%;
+    }
 }

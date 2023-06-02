@@ -6,6 +6,11 @@ self.addEventListener('install', event => {
           '/index.html',
           '/css/index.css',
           '/css/header.css',
+          '/login_cadastro/login.html',
+          '/login_cadastro/cadastro.html',
+          '/login_cadastro/login_cadastro.css',
+          '/user/telaLanchonetes.html',
+          '/user/lanchonete1/lanchonete1.html',
           '/images'
         ]);
       })

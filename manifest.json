@@ -1,0 +1,21 @@
+{
+    "name": "Agenda aí",
+    "short_name": "Agendaai",
+    "start_url": "/https://agendaai.netlify.app/",
+    "display": "standalone",
+    "scope" : "/index.html",
+    "theme_color": "#FA240F",
+    "background_color": "#FA680F",
+    "icons": [
+      {
+        "src": "images/logo-agendaai-icon.ico",
+        "sizes": "72x72",
+        "type": "image/ico"
+      },
+      {
+        "src": "images/logo-agendaai.png",
+        "sizes": "98x98",
+        "type": "image/png"
+      }
+    ]
+  }

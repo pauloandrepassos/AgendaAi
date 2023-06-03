@@ -3,7 +3,7 @@
     "short_name": "Agendaai",
     "start_url": "https://agendaai.netlify.app/",
     "display": "standalone",
-    "scope" : "/index.html",
+    "scope" : "index.html",
     "theme_color": "#FA240F",
     "background_color": "#FA680F",
     "icons": [

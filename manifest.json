@@ -1,7 +1,7 @@
 {
     "name": "Agenda aí",
     "short_name": "Agendaai",
-    "start_url": "/index.html",
+    "start_url": "/",
     "display": "standalone",
     "theme_color": "#FA240F",
     "background_color": "#FA680F",

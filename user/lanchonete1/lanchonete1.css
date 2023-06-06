@@ -79,7 +79,6 @@
     max-width: 70%;
     margin: auto;
     border-radius: 1rem;
-    box-shadow:  10px 10px 10px #afa8a5;
 }
 
 @media (max-width: 600px) {

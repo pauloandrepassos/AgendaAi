@@ -73,7 +73,6 @@ main h2 {
 a {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    margin-top: 20px;
     height: 60px;
     background: #FA240F;
     color:#FFF7E1;
@@ -81,6 +80,7 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    transition: 0.2s;
 }
 
 .adicionar {
@@ -92,7 +92,11 @@ a {
     width: 48%;
 }
 
-i {
+a:hover {
+    transform: scale(1.05);
+}
+
+#lixeira {
     color: #FA240F;
     cursor: pointer;
     margin-right: 20px;
@@ -112,6 +116,10 @@ i {
     #horario {
         width: 30%;
         font-size: 25px;
+    }
+
+    i {
+        margin-right: 10px;
     }
 }
 
@@ -144,7 +152,17 @@ i {
         font-size: 25px;
     }
 
+    i {
+        margin-right: 0px;
+    }
+
     #horario {
         width: 40%;
+    }
+}
+
+@media (max-width: 350px) {
+    main {
+        font-size: 17px;
     }
 }

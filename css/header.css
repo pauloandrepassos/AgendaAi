@@ -17,18 +17,28 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #ffffff;
+    cursor: default;
 }
 
 header .logo {
     margin-left: 5%;
     font-family: 'Pacifico', cursive;
     font-size: 18px;
-    color: #FAF0EC;
     display: flex;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.logo-nome {
+    color: #FFF7E1;
 }
 
 .logo-img {
     height: 70px;
+}
+
+header .logo:hover {
+    transform: scale(1.03);
 }
 
 @media (max-width: 500px) {

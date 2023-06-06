@@ -11,15 +11,35 @@ const togglePassword = document.querySelector('#togglePassword');
 
                 // toggle the eye slash icon
             });
-document.getElementById("buttonLogin").addEventListener("click", function() {
-    var emailLogin = document.getElementById("emailLogin").value;
-    if (emailLogin == "admin") {
-        window.location.href = '/admin/admin.html';
+function logar() {
+    var email = document.getElementById("login").value;
+    var senha = document.getElementById("senha").value;
+              
+    if (email === "" || senha === "") {
+        alert("Por favor, preencha todos os campos");
+        return false; 
     }
-    else if (emailLogin == 'gerente') {
-        window.location.href = '/gerente/gerente.html'
+              
+    var tipoUsuario;
+    if (email === "admin@example.com" && senha == "admin") {
+        tipoUsuario = "admin";
+    } else if (email === "gerente@example.com" && senha == "gerente") {
+        tipoUsuario = "gerente";
+    } else if (email === "user@example.com" && senha == "user123") {
+        tipoUsuario = "usuario";
+   }
+              
+    if (tipoUsuario === "admin") {
+        window.location.href = "/admin/admin.html";
+        alert("Bem-vindo, admin!");
+    } else if (tipoUsuario === "gerente") {
+        window.location.href = "/gerente/gerente.html";
+        alert("Bem-vindo, gerente!");
+    } else if (tipoUsuario === "usuario") {
+        window.location.href = "/user/telaLanchonetes.html";
+        alert("Bem-vindo, usuário comum!");
     }
     else {
-        window.location.href = '/user/telaLanchonetes.html';
+        alert("Usuário ou senha incorretos");
     }
-});
+}

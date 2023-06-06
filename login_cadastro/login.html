@@ -23,14 +23,14 @@
         <div class="container-login">
             <h1 class="login-cadastro-titulo">Login</h1>
             <form class="form-login">
-                <input id="emailLogin" type="email" placeholder="Email" required />
-                <input id="passwordLogin" type="password" id="password" placeholder="Senha" required />
+                <input id="login" type="email" placeholder="Email" required />
+                <input id="senha" type="password" id="password" placeholder="Senha" required />
                 <i class="fa fa-eye" aria-hidden="true" id="togglePassword" onclick="togglePassword2()"></i>
                 <div class="div-check">
                     <input type="checkbox" />
                     <label>Lembrar senha</label>
                 </div>
-                <button id="buttonLogin" type="submit">Entrar</button>
+                <button id="buttonLogin" type="submit" onclick="logar()">Entrar</button>
                 <div class="login-cadastro">
                     <span>Caso não esteja cadastrado, clique</span>
                     <a href="cadastro.html">aqui</a>

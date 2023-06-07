@@ -85,12 +85,12 @@ body {
     margin-right: 20px;
 }
 
-i {
+header i {
     color: #FFF7E1;
     cursor: pointer;
     transition: 0.2s;
 }
 
-i:hover {
+header i:hover {
     transform: scale(1.2);
 }

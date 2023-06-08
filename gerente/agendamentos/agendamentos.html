@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tela dedicada para os agendamentos em vigor.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/gerente/gerente.css">
     <link rel="shortcut icon" href="/images/logo-agendaai-icon.ico" type="image/x-icon">
     <title>Agendamentos</title>
@@ -37,34 +38,60 @@
         </section>
         <section class="agendamentos-realizados">
             <h1>Pedidos realizados</h1>
-            <div class="card-pedido">
-                <h2 class="horario">09:00</h2>
-                <div class="imagens-pedidos">
-                    <img src="/images/cachorro-quente.jpeg" id="foto-cachorro" alt="">
-                    <img src="/images/café.jpeg" id="foto-cafe2" alt="">
+            <div class="pedido">
+                <div class="pedido-minimizado" >
+                    <img id="imgPrincipalPedido" src="/images/coxinha.jpg" alt="">
+                    <h2>18:00</h2>
+                    <h2>R$12,00</h2>
+                    <a href="">Baixa</a>
+                    <i id="visualizar" class="fa-solid fa-caret-down"></i>
                 </div>
-                <a href="">Confirmar retirada</a>
-            </div>
-            <div class="card-pedido">
-                <h2>09:00</h2>
-                <div>
-                    <img src="/images/cachorro-quente.jpeg" id="foto-cachorro" alt="">
-                    <img src="/images/café.jpeg" id="foto-cafe2" alt="">
+                <div class="pedido-maximizado" style="display: none;">
+                    <div class="info">
+                    </div>
+                    <div class="itens">
+                        <img src="/images/coxinha.jpg" alt="">
+                        <h2 class="nomes">Coxinha de frango</h2>
+                        <h3>Un.1</h3>
+                        <h2>R$5,00</h2>
+                    </div>
+                    <div class="itens">
+                        <img src="/images/café.jpeg" alt="">
+                        <h2 class="nomes">Café</h2>
+                        <h3>Un.1</h3>
+                        <h2>R$1,00</h2>
+                    </div>
+                    <div class="itens">
+                        <img src="/images/bolo-de-chocolate.jpg" alt="">
+                        <h2 class="nomes">Bolo de chocolate</h2>
+                        <h3>Un.1</h3>
+                        <h2>R$6,00</h2>
+                    </div>
                 </div>
-                <h2>R$6,00</h2>
-                <a href="">Confirmar retirada</a>
             </div>
-            <div class="card-pedido">
-                <h2>15:00</h2>
-                <div>
-                    <img src="/images/cachorro-quente.jpeg" id="foto-cachorro" alt="">
-                    <img src="/images/café.jpeg" id="foto-cafe2" alt="">
+
+        <div class="pedido">
+            <div class="pedido-minimizado">
+                <img id="imgPrincipalPedido" src="/images/café.jpeg" alt="">
+                <h2>20:00</h2>
+                <h2>R$1,00</h2>
+                <a href="">baixa</a>
+                <i id="visualizar" class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="pedido-maximizado" style="display: none;">
+                <div class="info">
                 </div>
-                <h2>R$6,00</h2>
-                <a href="">Confirmar retirada</a>
+                <div class="itens">
+                    <img src="/images/café.jpeg" alt="">
+                    <h2 class="nomes">Café</h2>
+                    <h3>Un.1</h3>
+                    <h2>R$1,00</h2>
+                </div>
             </div>
+        </div>
         </section>
     </main>
 
+    <script src="/script.js"></script>
 </body>
 </html>

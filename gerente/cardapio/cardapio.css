@@ -1,0 +1,84 @@
+
+@import'/css/header.css';
+main {
+    display: flex;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #FA240F;
+    width: 100%;
+}
+
+.tipo-salgado {
+    border-top: 1px solid #FA240F;
+    margin: 20px 0;
+    padding-top: 10px;
+}
+
+.lanches {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-lanche:hover {
+    transform: scale(1.08);
+}
+
+.lanches .card-lanche {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    margin: 5px 5px 10px 5px;
+    color: #FA680F;
+    transition: 0.2s;
+    font-size: 12px;
+}
+.lanches img {
+    max-height: 50%;
+    border-radius: 1rem;
+}
+.icone {
+    font-size: 100px;
+}
+.excluir-lanche {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo e a transparência */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.excluir-lanche div {
+    color: #FA240F;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+.excluir {
+    border: 1px solid #FA240F;
+    color: #FA240F;
+    background-color: #FAF0EC;
+}
+.cancelar {
+    border: 1px solid #FA240F;
+    background-color: #FA240F;
+    color: #FAF0EC;
+}

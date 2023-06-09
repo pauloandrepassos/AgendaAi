@@ -78,7 +78,7 @@ main h1 {
 }
 
 .pedido a {
-    ont-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     height: 60px;
     width: 45%;
@@ -105,4 +105,48 @@ a:hover {
 
 .pedido .Alterar {
     background: #FA680F;
+}
+
+@media (max-width: 750px) {
+    .itens h2 {
+        width: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .pedido img {
+        width: 75px;
+        height: 75px;
+        border-radius: 75px;
+    }
+
+    main h2, main h3 {
+        font-size: 20px;
+    }
+
+    .pedido a {
+        font-size: 20px;
+        height: 40px;
+    }
+
+    .itens h2 {
+        width: 75px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nome {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    main h2, main h3 {
+        font-size: 16px;
+    }
+
+    .pedido img {
+        width: 70px;
+        height: 70px;
+    }
 }

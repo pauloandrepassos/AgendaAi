@@ -25,12 +25,12 @@
             <form class="form-cadastro">
                 <input type="text" placeholder="Nome" required />
                 <input type="email" placeholder="Email" required />
-                <input type="number" placeholder="CPF" required />
+                <input type="text" id="cpf" name="cpf" maxlength="14" oninput="formatarCPF(this)" placeholder="CPF" required />
                 <input type="text" placeholder="Cidade" required />
                 <input type="password" id="password" placeholder="Senha" required />
-                <i class="fa fa-eye" aria-hidden="true" id="togglePassword1" onclick="togglePassword2()"></i>
+                <i class="fa fa-eye" aria-hidden="true" id="togglePassword"></i>
                 <input type="password" id="confirm-password" placeholder="Confirmar senha" required />
-                <i class="fa fa-eye" aria-hidden="true" id="togglePassword2" onclick="togglePassword1()"></i>
+                <i class="fa fa-eye" aria-hidden="true" id="togglePassword1"></i>
                 <button type="submit" onclick="window.location.href = 'login.html'">Cadastrar</button>
                 <div class="login-cadastro">
                     <span>Caso já esteja cadastrado, clique</span>
@@ -39,6 +39,6 @@
             </form>
         </div>
     </main>
-    <script src="cadastro.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

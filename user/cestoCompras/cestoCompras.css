@@ -1,5 +1,5 @@
 main {
-    width: 90%;
+    width: 95%;
     margin: 30px;
     padding: 30px;
     display: flex;
@@ -26,8 +26,7 @@ main h2 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    border-radius: 20px;
+    border-radius: 50px;
     border: 1px solid #FA680F;
     margin-bottom: 10px;
 }
@@ -36,11 +35,16 @@ main h2 {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 50px;
 }
 
 .item h2 {
     margin-right: 15px;
+}
+
+.nome {
+    width: 15%;
+    font-size: 35px;
 }
 
 .horario-retirada {
@@ -70,7 +74,7 @@ main h2 {
     justify-content: space-between;
 }
 
-a {
+.botoes a {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     height: 60px;
@@ -83,7 +87,7 @@ a {
     transition: 0.2s;
 }
 
-.adicionar {
+.botoes .adicionar {
     width: 48%;
     background: #FA680F;
 }
@@ -99,7 +103,12 @@ a:hover {
 #lixeira {
     color: #FA240F;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 25px;
+    transition: 0.2s;
+}
+
+#lixeira:hover {
+    transform: scale(1.2);
 }
 
 #horario {
@@ -112,6 +121,21 @@ a:hover {
     cursor: pointer;
 }
 
+@media (max-width: 1140px) {
+    .nome {
+        width: 20%;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        width: 90%;
+    }
+    .nome {
+        font-size: 25px;}
+}
+
 @media (max-width: 650px) {
     #horario {
         width: 30%;
@@ -120,6 +144,10 @@ a:hover {
 
     i {
         margin-right: 10px;
+    }
+
+    .nome {
+        display: none;
     }
 }
 

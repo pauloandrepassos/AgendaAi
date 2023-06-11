@@ -22,6 +22,7 @@ main h1 {
 }
 
 .pedido {
+    background: #fdf1cf;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -64,6 +65,7 @@ main h1 {
 }
 
 .itens {
+    background: #faeabd;
     display: flex;
     flex-direction: row;
     align-items: center;

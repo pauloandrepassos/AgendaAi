@@ -41,33 +41,7 @@ header .logo:hover {
     transform: scale(1.03);
 }
 
-@media (max-width: 500px) {
-    .logo-nome {
-        display: none;
-    }
-}
-@media (min-width: 500px) {
-    .logo-img {
-        display: none;
-    }
-}
 
-header .sandwich {
-    margin-right: 5%;
-    color: #FFF7E1;
-    border-radius: 3rem;
-    padding: 10px;
-}
-
-.sandwich:hover {
-    transform: scale(1.2);
-}
-
-header .sandwich__line {
-    border: 1px solid #FAF0EC;
-    width: 30px;
-    margin: 5px 0;
-}
 
 body {
     height: 100%;
@@ -93,4 +67,15 @@ header i {
 
 header i:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 500px) {
+    .logo-nome {
+        display: none;
+    }
+}
+@media (min-width: 500px) {
+    .logo-img {
+        display: none;
+    }
 }

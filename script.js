@@ -57,7 +57,7 @@ if (document.title.includes("Agendamentos")) {
 
   function logar() {
     var email = document.getElementById("login").value;
-    var senha = document.getElementById("senha").value;  
+    var senha = document.getElementById("password").value;  
     if (email === "" || senha === "") {
         alert("Por favor, preencha todos os campos");
         return false; 

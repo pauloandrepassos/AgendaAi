@@ -10,7 +10,8 @@
     <link rel="shortcut icon" href="/images/logo-agendaai-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Lanchonete 1</title></head>
+    <title>Lanchonete</title>
+</head>
 <body>
     <header>
         <div class="logo">
@@ -36,78 +37,96 @@
                 <h3><i class="far fa-clock"></i> 8:00 - 11:00 / 15:00 - 21:00</h3>
             </div>
         </section>
-        <h3 class="tipo-salgado">Salgados:</h3>
-        <section class="lanches">
-            <div onclick="window.location.href='/user/lanche/lanche.html'" class="card-lanche">
-                <img src="/images/cachorro-quente.jpeg" alt="">
-                <h3>Cachorro-quente</h3>
-                <h3>R$ 5.00</h3>
+        <section class="amostragem">
+            <div class="seletor-categoria">
+                <h2 class="categoria">Salgados</h2>
             </div>
-            <div onclick="window.location.href='/user/lanche/lanche.html'" class="card-lanche">
-                <img src="/images/coxinha.jpg" alt="">
-                <h3>Coxinha de frango</h3>
-                <h3>R$ 5.00</h3>
+            <div id="salgados" class="card-categoria">
+                <div class="card-lanche">
+                    <img src="/images/coxinha.jpg" alt="">
+                    <h2 class="nome-lanche">Coxinha de frango</h2>
+                    <h2>R$3,50</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/cachorro-quente.jpeg" alt="">
+                    <h2 class="nome-lanche">Cachorro quente</h2>
+                    <h2>R$4,50</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/bomba.jpg" alt="">
+                    <h2 class="nome-lanche">Bomba presunto</h2>
+                    <h2>R$3,50</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/pastel.jpg" alt="">
+                    <h2 class="nome-lanche">Pastel de carne</h2>
+                    <h2>R$3,50</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/risole.jpg" alt="">
+                    <h2 class="nome-lanche">Risole</h2>
+                    <h2>R$3,50</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/torta-de-frango.webp" alt="">
+                    <h2 class="nome-lanche">Torta de frango</h2>
+                    <h2>R$4,00</h2>
+                </div>
             </div>
-            <div class="card-lanche">
-                <img src="/images/cachorro-quente.jpeg" alt="">
-                <h3>Cachorro-quente</h3>
-                <h3>R$ 5.00</h3>
+            <div class="seletor-categoria">
+                <h2 class="categoria">Bolos</h2>
             </div>
-            <div class="card-lanche">
-                <img src="/images/coxinha.jpg" alt="">
-                <h3>Coxinha de frango</h3>
-                <h3>R$ 5.00</h3>
+            <div id="bolos" class="card-categoria">
+                <div class="card-lanche">
+                    <img src="/images/bolo-de-chocolate.jpg" alt="">
+                    <h2 class="nome-lanche">Bolo de chocolate</h2>
+                    <h2>R$4,00</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/bolo-de-leite.webp" alt="">
+                    <h2 class="nome-lanche">Bolo de leite</h2>
+                    <h2>R$4,50</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/bolo-de-milho.webp" alt="">
+                    <h2 class="nome-lanche">Bolo de milho</h2>
+                    <h2>R$4,50</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/bolo-de-pote-de-cenoura.jpg" alt="">
+                    <h2 class="nome-lanche">Bolo de cenoura</h2>
+                    <h2>R$4,00</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/bolo-formigueiro.jpg" alt="">
+                    <h2 class="nome-lanche">Bolo formigueiro</h2>
+                    <h2>R$4,50</h2>
+                </div>
             </div>
-            <div class="card-lanche">
-                <img src="/images/cachorro-quente.jpeg" alt="">
-                <h3>Cachorro-quente</h3>
-                <h3>R$ 5.00</h3>
+            <div class="seletor-categoria">
+                <h2 class="categoria">Bebidas</h2>
             </div>
-        </section>
-        <h3 class="tipo-salgado">Bolos:</h3>
-        <section class="lanches">
-            <div class="card-lanche">
-                <img src="/images/bolo-de-pote-de-cenoura.jpg" alt="">
-                <h3>Bolo de cenoura</h3>
-                <h3>R$ 6.00</h3>
-            </div>
-            <div class="card-lanche">
-                <img src="/images/bolo-de-chocolate.jpg" alt="">
-                <h3>Bolo de chocolate</h3>
-                <h3>R$ 6.00</h3>
-            </div>
-            <div class="card-lanche">
-                <img src="/images/bolo-de-pote-de-cenoura.jpg" alt="">
-                <h3>Bolo de cenoura</h3>
-                <h3>R$ 6.00</h3>
-            </div>
-            <div class="card-lanche">
-                <img src="/images/bolo-de-chocolate.jpg" alt="">
-                <h3>Bolo de chocolate</h3>
-                <h3>R$ 6.00</h3>
-            </div>
-            <div class="card-lanche">
-                <img src="/images/bolo-de-pote-de-cenoura.jpg" alt="">
-                <h3>Bolo de cenoura</h3>
-                <h3>R$ 6.00</h3>
-            </div>
-        </section>
-        <h3 class="tipo-salgado">Bebidas:</h3>
-        <section class="lanches">
-            <div class="card-lanche">
-                <img src="/images/café.jpeg" alt="">
-                <h3>Café</h3>
-                <h3>R$ 1.00</h3>
-            </div>
-            <div class="card-lanche">
-                <img src="/images/café.jpeg" alt="">
-                <h3>Café</h3>
-                <h3>R$ 1.00</h3>
-            </div>
-            <div class="card-lanche">
-                <img src="/images/café.jpeg" alt="">
-                <h3>Café</h3>
-                <h3>R$ 1.00</h3>
+            <div id="bebidas" class="card-categoria">
+                <div class="card-lanche">
+                    <img src="/images/coca-cola.webp" alt="">
+                    <h2 class="nome-lanche">Coca cola</h2>
+                    <h2>R$2,00</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/guaraná.webp" alt="">
+                    <h2 class="nome-lanche">Guaraná</h2>
+                    <h2>R$2,00</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/café.jpeg" alt="">
+                    <h2 class="nome-lanche">Café</h2>
+                    <h2>R$1,00</h2>
+                </div>
+                <div class="card-lanche">
+                    <img src="/images/goiaba.jpg" alt="">
+                    <h2 class="nome-lanche">suco de goiaba</h2>
+                    <h2>R$1,00</h2>  
+                </div>
             </div>
         </section>
     </main>

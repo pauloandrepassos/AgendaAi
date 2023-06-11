@@ -1,14 +1,14 @@
 .subtitulo {
-    font-family: 'Roboto', cursive;
+    font-family: 'Pacifico', cursive;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     color: #FA240F;
     padding: 0 50px 0 50px;
     margin-top: 30px;
 }
 
 .titulo-lanchonetes {
-    margin-top: 25px;
+    margin-top: 35px;
     color: #FA240F;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
@@ -24,9 +24,9 @@
 }
 
 .card-lanchonete {
+    background: #fdf1cf;
     width: 400px;
     height: 200px;
-    border: 1px solid #FA240F;
     border-radius: 1rem;
     margin: 20px 0;
     display: flex;
@@ -34,8 +34,7 @@
     color: #FA240F;
     font-family: 'Roboto', sans-serif;
     transition: 0.2s;
-    box-shadow:  20px 20px 35px #afa8a5;
-
+    box-shadow: 5px 5px 0px #656053, -5px -5px 0px #ffffff;
 }
 
 .card-lanchonete:hover {
@@ -51,6 +50,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;  /*esconde o conteúdo que ultrapassar a div*/
+}
+
+#cantina {
+    background: #FA680F;
 }
 
 .logo-lanchonete img {
@@ -76,6 +79,11 @@
 .horario-lanchonete {
     margin: 0;
     font-size: 16px;
+}
+
+#icon-store {
+    font-size: 80px;
+    color: #FFF7E1;
 }
 
 @media (max-width: 919px) {

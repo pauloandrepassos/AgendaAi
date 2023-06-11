@@ -160,6 +160,7 @@ button:hover {
 }
 
 .pedido {
+    background: #fdf1cf;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -206,6 +207,7 @@ button:hover {
 }
 
 .pedido .itens {
+    background: #faeabd;
     display: flex;
     flex-direction: row;
     align-items: center;

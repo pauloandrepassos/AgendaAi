@@ -19,7 +19,7 @@
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid #FA240F;
-    box-shadow:  10px 10px 10px #afa8a5;
+    box-shadow: 5px 5px 0px #656053;
 }
 
 .container-cadastro {
@@ -33,7 +33,7 @@
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid #FA240F;
-    box-shadow:  10px 10px 10px #afa8a5;
+    box-shadow: 5px 5px 0px #656053;
 }
 
 .login-cadastro-titulo {

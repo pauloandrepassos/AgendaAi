@@ -65,6 +65,10 @@ body
     gap: 40px;
 }
 
+.card-categoria a {
+    color: #FA240F;
+}
+
 .categoria {
     font-family: 'Pacifico', cursive;
     color:#FA240F;

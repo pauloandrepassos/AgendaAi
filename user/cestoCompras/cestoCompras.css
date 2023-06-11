@@ -1,4 +1,5 @@
 main {
+    background: #fdf1cf;
     width: 95%;
     margin: 30px;
     padding: 30px;
@@ -20,6 +21,7 @@ main h2 {
 }
 
 .item {
+    background: #faeabd;
     display: flex;
     color: #FA680F;
     width: 100%;

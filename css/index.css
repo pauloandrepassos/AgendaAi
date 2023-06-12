@@ -126,12 +126,13 @@ aside .desktop {
     width: fit-content;
     max-width: 100%;
     border-radius: 10px;
-    border: #FA240F 1px solid;
+    box-shadow: 5px 5px 0px #656053, -5px -5px 0px #ffffff;
 }
 
 aside .telas-mobile {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 90%;
@@ -141,9 +142,13 @@ aside .telas-mobile img {
     height: fit-content;
     max-height: 400px;
     width: fit-content;
-    max-width: 50%;
+    max-width: 30%;
     border-radius: 25px;
     margin: 0 5px 0 5px;
+}
+
+.mobile {
+    box-shadow: 5px 5px 0px #656053, -5px -5px 0px #ffffff;
 }
 
 @media (max-width: 1050px) {
@@ -154,7 +159,7 @@ aside .telas-mobile img {
         max-width: 100%;
     }
     aside .desktop {
-        max-width: 80%;
+        max-width: 90%;
     }
 }
 @media (max-width: 650px) {

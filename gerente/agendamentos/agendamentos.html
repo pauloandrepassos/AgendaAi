@@ -14,28 +14,10 @@
     <header>
         <div class="logo">
             <img class="logo-img" src="/images/logo-agendaai.png" alt="">
-            <h1 class="logo-nome">Agenda aí</h1>
+            <h1 class="logo-nome" onclick="window.location.href='/gerente/gerente.html'">Agenda aí</h1>
         </div>
     </header>
     <main>
-        <section class="menu">
-            <img onclick="window.location.href='/gerente/gerente.html'" src="/images/logo1.png" alt="">
-            <h2>NOME DA LANCHONETE</h2>
-            <div class="opcoes-menu">
-                <div onclick="window.location.href='/gerente/cardapio/cardapio.html'">
-                    <h3>Cardapio</h3>
-                </div>
-                <div onclick="window.location.href='/gerente/configuracaoCantinas/configuracaoCantinas.html'">
-                    <h3>Configurar Cantina</h3>
-                </div>
-                <div onclick="window.location.href='/gerente/agendamentos/agendamentos.html'">
-                    <h3>Agendamentos</h3>
-                </div>
-                <div onclick="window.location.href='/gerente/historicoVendas/historicoVendas.html'">
-                    <h3>Histórico de Vendas</h3>
-                </div>
-            </div>
-        </section>
         <section class="agendamentos-realizados">
             <h1>Pedidos realizados</h1>
             <div class="pedido">
@@ -43,11 +25,12 @@
                     <img id="imgPrincipalPedido" src="/images/coxinha.jpg" alt="">
                     <h2>18:00</h2>
                     <h2>R$12,00</h2>
-                    <a href="">Baixa</a>
+                    <button onclick="confirmarRetirada()">Baixa</button>
                     <i id="visualizar" class="fa-solid fa-caret-down"></i>
                 </div>
                 <div class="pedido-maximizado" style="display: none;">
-                    <div class="info">
+                    <div class="codigo-retirada">
+                        <h2>Código de retirada: j873j7</h2>
                     </div>
                     <div class="itens">
                         <img src="/images/coxinha.jpg" alt="">
@@ -75,7 +58,7 @@
                 <img id="imgPrincipalPedido" src="/images/café.jpeg" alt="">
                 <h2>20:00</h2>
                 <h2>R$1,00</h2>
-                <a href="">baixa</a>
+                <button onclick="confirmarRetirada()">Baixa</button>
                 <i id="visualizar" class="fa-solid fa-caret-down"></i>
             </div>
             <div class="pedido-maximizado" style="display: none;">
@@ -90,6 +73,15 @@
             </div>
         </div>
         </section>
+        <div id="confirmarRetirada" class="confirmar-retirada">
+            <div>
+                <h3>Insira o código do pedido para confirmar retirada</h3>
+                <div class="buttons">
+                    <button class="excluir" onclick="ocultarDiv()">Confirmar Retirada</button>
+                    <button class="cancelar" onclick="ocultarDiv()">Cancelar</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="/script.js"></script>

@@ -64,6 +64,11 @@ main h1 {
 
 }
 
+.codigo-retirada {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .itens {
     background: #faeabd;
     display: flex;

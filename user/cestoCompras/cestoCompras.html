@@ -57,8 +57,28 @@
         </div>
         <div class="botoes">
             <a class="adicionar" href="/user/lanchonete1/lanchonete1.html">Adicionar mais</a>
-            <a class="confirmar" href="/user/agendamento/agendamento.html">Agendar</a>
+            <a class="confirmar" onclick="exibirDiv()">Agendar</a>
         </div>
     </main>
+    <div id="confirmarAgendamento" class="confirmar-agendamento">
+        <div>
+            <h3>Confirmar agendamento dos lanches escolhidos?</h3>
+            <div class="buttons">
+                <button class="button-confirmar" onclick="window.location.href='/user/agendamento/agendamento.html'">Confirmar</button>
+                <button class="button-cancelar" onclick="ocultarDiv()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function exibirDiv() {
+            var overlay = document.getElementById("confirmarAgendamento");
+            overlay.style.display = "flex";
+        }
+        
+        function ocultarDiv() {
+            var overlay = document.getElementById("confirmarAgendamento");
+            overlay.style.display = "none";
+        }
+    </script>
 </body>
 </html>

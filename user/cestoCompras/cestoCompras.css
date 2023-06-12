@@ -123,6 +123,47 @@ a:hover {
     cursor: pointer;
 }
 
+.confirmar-agendamento {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo e a transparência */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmar-agendamento div {
+    color: #FA240F;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-confirmar, .button-cancelar {
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #FA240F;
+    color: #FA240F;
+    background-color: #FAF0EC;
+    transition: 0.3s;
+}
+
+button:hover {
+    border: 1px solid #FA240F;
+    background-color: #FA240F;
+    color: #FAF0EC;
+    transform: scale(1.1);
+}
+
 @media (max-width: 1140px) {
     .nome {
         width: 20%;

@@ -1,7 +1,7 @@
 cardAberto = false;
 
 if (document.title.includes("Agendamentos")) {
-  const pedidoMinimizado = document.querySelectorAll('.pedido-minimizado');
+  const pedidoMinimizado = document.querySelectorAll('.pedido-minimizado i');
   const pedidoMax = document.querySelectorAll('.pedido-maximizado');
 
   for (let i = 0; i < pedidoMinimizado.length; i++) {
@@ -131,4 +131,13 @@ if (document.title.includes("Agendamentos")) {
         }
     });
   });
+}
+
+function confirmarRetirada() {
+  var overlay = document.getElementById("confirmarRetirada");
+  overlay.style.display = "flex";
+}
+function ocultarDiv() {
+  var overlay = document.getElementById("confirmarRetirada");
+  overlay.style.display = "none";
 }

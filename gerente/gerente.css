@@ -206,6 +206,12 @@ button:hover {
 
 }
 
+.codigo-retirada {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
 .pedido .itens {
     background: #faeabd;
     display: flex;
@@ -221,7 +227,7 @@ button:hover {
     width: 150px;
 }
 
-.pedido a {
+.pedido button {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     height: 40px;
@@ -233,10 +239,7 @@ button:hover {
     justify-content: center;
     border-radius: 20px;
     transition: 0.2s;
-}
-
-a:hover {
-    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .pedido .info {
@@ -246,4 +249,59 @@ a:hover {
     align-items: center;
     justify-content: space-around;
     margin-bottom: 10px;
+}
+
+.confirmar-retirada {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo e a transparência */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.confirmar-retirada div {
+    color: #FA240F;
+    background-color: #fdf1cf;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.confirmar-retirada button {
+    text-align: center;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.input-codigo-lanche {
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+
+}
+
+.input-codigo-lanche {
+    background-color: white;
+    border: 1px solid #FA240F;
+}
+
+.excluir {
+    border: 1px solid #FA240F;
+    color: #FA240F;
+    background-color: #FAF0EC;
+}
+.cancelar {
+    border: 1px solid #FA240F;
+    background-color: #FA240F;
+    color: #FAF0EC;
 }

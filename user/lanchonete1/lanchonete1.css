@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-body
 
 .main-lanchonete {
     width: 100%;
@@ -61,7 +60,7 @@ body
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     gap: 40px;
 }
 
@@ -84,12 +83,127 @@ body
 
 .card-lanche img {
     border-radius: 60px;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 100px;
+}
+
+.main-lanche {
+    display: none;
 }
 
 .card-lanche:hover {
     transform: scale(1.1);
+}
+.lanche-principal {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: default;
+    border-radius: 20px;
+}
+
+.lanche-principal img {
+    width: 500px;
+    height: 500px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.titulo-lanche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-lanche h1 {
+    font-family: 'Lobster', cursive;
+    color: #FA240F;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.titulo-lanche p {
+    font-family: 'Roboto', sans-serif;
+    color: #FA680F;
+    font-size: 20px;
+}
+
+.informacoes-do-lanche {
+    background: #fdf1cf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 500px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+
+.descrição {
+    font-family: 'Roboto', sans-serif;
+    color: #FA680F;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.info-lanche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FA240F;
+}
+
+.unidade {
+    margin-left: 260px;
+}
+
+.dinheiros {
+    border: #FA240F solid 1px;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 150px;
+}
+
+.dinheiros .preco-final {
+    font-family: 'Roboto', sans-serif;
+    color: #FA240F;
+    font-size: 30px;
+}
+
+.quantificador {
+    display: flex;
+    background:#FA680F;
+    width: 120px;
+    border-radius: 20px;
+    color: #FFF7E1;
+    justify-content: space-around;
+}
+.quantificador * {
+    font-size: 34px;
+}
+
+.info-lanche a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 380px;
+    height: 40px;
+    background: #FA240F;
+    color:#FFF7E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
 }
 
 @media (max-width: 1250px) {
